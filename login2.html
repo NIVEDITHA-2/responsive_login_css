@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body,html{
+        background: #e6e3e3;
+        place-items: center;
+        display: grid;
+        height: 100%;
+    }
+    .wrapper
+    {
+        width: 380px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 15px 20px rgba(0,0,0,0.1);
+
+    }
+    .wrapper .title
+    {
+        line-height: 100px;
+        background: linear-gradient(135deg,rgb(155, 40, 155),rgb(216, 69, 172));
+        font-size: 25px;
+        color: #fff;
+        display: grid;
+        justify-content: center;
+        font-weight: 600;
+        border-radius: 15px 15px 0 0;
+    }
+    .wrapper form{
+        padding: 10px 30px 50px 30px ;
+    
+    }
+    .wrapper form .row
+    {
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+    }
+    .wrapper form .row input
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        border: 1px solid lightgray;
+        padding: 20px;
+        font-size: 18px;  
+        outline: none;
+        transition:  all 0.3s ease;
+    
+        
+    }
+    .wrapper form .row input:focus
+    {
+        border-color: #4158d0;
+        
+    }
+   
+    .wrapper form .pass
+    {
+    margin-top: 20px;
+    }
+    .wrapper form .pass a{
+        text-decoration: none;
+        color: purple;
+        font-size: 17px;
+    
+
+    }
+    .wrapper form .pass a:hover
+    {
+    text-decoration: underline;
+    }
+    .wrapper form .button input
+    {
+        padding-left: 0;
+        background:linear-gradient(135deg,rgb(155, 40, 155),rgb(216, 69, 172));
+        border: 1px solid purple;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500px;
+        border: 1px solid purple;
+        cursor: pointer;
+        font-family: sans-serif;
+        transform: all 0.3s ease;
+    }
+    .wrapper form .signup-link 
+    {
+        margin-top:20px;
+        text-align: center;
+    }
+    .wrapper form .signup-link a
+    {
+        color: purple;
+        font-size: 18px;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    form .signup-link a:hover
+    {
+        text-decoration: underline;
+    }
+    
+
+</style>
+<body>
+    <div class="wrapper">
+            <div class="title"><span>Login Form</span></div>
+            <form action="#">
+                <div class="row">
+                    <input type="text" placeholder="Email Address"required>
+                    </div>
+                    <div class="row">
+                    <input type="password" placeholder="password"required>
+                    </div>
+                    <div class="pass"><a href="#">Forgot Password?</a></div>
+                <div class="row button">
+                    <input type="submit" value="Login">
+                </div>
+                <div class="signup-link"style="font-family:sans-serif">Not a member?<a href="#">signup now</a></div> 
+            </form>
+    </div>
+</body>
+</html>
